@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- links to Bootstrap style sheets https://getbootstrap.com/ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- link to my own style sheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>Cart Page</title>
+
+  <style>
+    button a {
+      text-decoration: none;
+      color: black;
+    }
+
+    button {
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- classes for colors/styles adapted from https://getbootstrap.com/
+             icons from  https://icons.getbootstrap.com/
+            structure is my own work-->
+  <nav class="navbar bg-dark">
+    <div class="container-fluid text-center">
+      <a href="index.html" alt="home button" class="text-warning col-md-4">HomePage</a>
+      <h1 class="text-warning col-md-4">Shopping Cart</h1>
+      <a href="cart.html" alt="cart button" class="nav-link cart active text-warning col-md-4"><i
+          class="bi bi-cart text-warning">Cart</i><span>0</span></a>
+    </div>
+  </nav>
+
+  <!-- table
+    table adapted from https://getbootstrap.com/docs/5.3/getting-started/introduction/
+  structure of the table was created by me -->
+  <table class="table products table-sm">
+    <thead>
+      <tr>
+        <th scope="col" alt="product">PRODUCT</th>
+        <th scope="col" alt="price">PRICE</th>
+        <th scope="col" alt="quantity">QUANTITY</th>
+        <th scope="col" alt="total price">TOTAL PRICE</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <!-- div is empty and is changed by my javascript -->
+  <div class="basketTotal" alt="basket total"></div>
+  <div>
+    <!-- link to payment page/ classes from https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+    <button class="buy-button btn btn-warning"><a href="payment.html" alt="Place Order Button">Place Order</a></button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+<!-- Footer -->
+<footer class="sticky-footer foot bg-dark text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3 text-warning">
+    © 2023 Copyright: Echo Sounds
+
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</html>

@@ -1,0 +1,49 @@
+/* sets the height of the html page */
+html{
+    min-height: 100vh;
+}
+/* sets the height of the body, gives the background its color */
+body{
+    min-height: 100vh;
+    background: rgb(192,163,94);
+    background: linear-gradient(129deg, rgba(192,163,94,1) 15%, rgba(26,26,26,1) 100%);
+}
+.background{
+    height: 250px;
+    text-align: center;
+    background: rgb(192,163,94);
+    background: linear-gradient(129deg, rgba(192,163,94,1) 15%, rgba(26,26,26,1) 100%);
+}
+/* sets the style of the background image */
+.backgroundImg{
+    height: 220px;
+    width: auto;
+    margin-top: 12px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0);
+}
+button{
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+.buy-button{
+    margin-left: 15px;
+}
+/* removes underline and decoration from a tags on all pages */
+a{
+    text-decoration: none;
+}
+/* styles the divs with the class card */
+.card{
+    margin-top: 20px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+/* adds color to the number that shows in the cart span */
+.cart span{
+    color: red;
+}
+/* keeps the footer at the bottom of the page */
+.sticky-footer{
+    position: sticky;
+    top: 100%;
+}

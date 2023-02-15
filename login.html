@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</head>
+<body>
+  <!-- part my own code
+      classes relating to colors/styles adapted from reference:https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+    <div class="navbar bg-dark">
+        <div class="container">
+          <!-- hidden easter egg link to video on youtube(own code/besides color class and style class) -->
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="text-dark col-md-1">Easter Egg</a>
+            <h1 class="text-warning text-center col-md-10">Login Page</h1>
+            <a href="index.html" class="text-warning col-md-1" alt="homepage button">Home</a>
+        </div>
+    </div>
+    <!-- body content
+    classes adapted from https://getbootstrap.com/docs/5.3/getting-started/introduction/
+  inline styles, alt tags are my own work
+icons from https://icons.getbootstrap.com/ -->
+    <div class="container-fluid text-center p-0 mt-3" style="height: 300px; width: 300px;">
+        <img class="img-fluid p-0" src="images\login.png" alt="login image
+        "  style="height:300px;">
+    </div>
+    <div class="container-fluid text-center">
+        <form action="">
+            <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+            <button type="button" class="btn btn-warning btn-floating mx-1" alt="sign in with facebook button">
+              <i class="bi bi-facebook"></i>
+            </button>
+
+            <button type="button" class="btn btn-warning btn-floating mx-1" alt="sign in with twitter button">
+              <i class="bi bi-twitter"></i>
+            </button>
+
+            <button type="button" class="btn btn-warning btn-floating mx-1" alt="sign in with linkedin button">
+              <i class="bi bi-linkedin"></i>
+            </button>
+            <p class="text-center fw-bold mx-3 mb-0">OR</p>
+          </div>
+            <!-- email input
+            most of this is adapted from https://getbootstrap.com/docs/5.3/getting-started/introduction/ 
+          alt tags and a tags my own work  -->
+            <div class="container ml-5 mr-5 mt-3 w-50">
+                <input type="email" class="form-control d-flex justify-content-center" required placeholder="Email Address" alt="email input area"/>
+              </div>
+            <!-- password input -->
+            <div class="container ml-5 mr-5 mt-3 w-50">
+                <input type="password" class="form-control d-flex justify-content-center" required placeholder="Password" alt="password input area"/>
+              </div>
+              <!-- checkbox/forgot password -->
+              <div class="container ml-5 mr-5 mt-3 w-50 text-center">
+                 <label for="checkbox">Remember Me</label>
+                  <input type="checkbox" id="checkbox" alt="remember me checkbox button">
+              </div>
+              <div class="container ml-5 mr-5 mt-3 w-50 text-center">
+                <a href="contact.html" alt="forgot password button">Forgot Password?</a>
+              </div>
+              <!-- login button -->
+              <div class="container ml-5 mr-5 mt-3 w-50 text-center">
+                <button type="button" alt="login button" class="btn btn-warning btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              </div>
+              <!-- dont have an account -->
+              <div class="container ml-5 mr-5 mt-3 w-50 text-center">
+                <p class="small fw-bold mt-2 mb-4 pt-1 mb-0">Don't have an account? <a href="#"class="link-warning" alt="register button">Register</a></p>
+              </div>
+        </form>
+    </div>
+
+
+    
+</body>
+        <!-- Footer  classes adapted from 
+    https://getbootstrap.com/docs/5.3/getting-started/introduction/--> -->
+        <footer class="sticky-footer foot bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3 text-warning">
+              © 2023 Copyright: Echo Sounds
+              
+            </div>
+            <!-- Copyright -->
+          </footer>
+</html>

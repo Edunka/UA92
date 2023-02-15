@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- links to Bootstrap style sheets https://getbootstrap.com/ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- link to my own style sheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>HomePage</title>
+</head>
+
+<body>
+  <!-- logo The logo html and classes are my own work/image was created by me -->
+  <div class="background">
+    <img src="images\echologo.png" class="backgroundImg" alt="echo sounds logo">
+  </div>
+
+  <!-- logo -->
+  <!-- Navbar 
+    classes for colors/styles adapted from https://getbootstrap.com/
+             icons from  https://icons.getbootstrap.com/
+            structure is my own work-->
+  <nav class="navbar navbar-expand-sm bg-dark ">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-warning"></span>
+      </button>
+      <!--classes for colors/styles adapted from https://getbootstrap.com/
+             icons from  https://icons.getbootstrap.com/-->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-warning" href="contact.html">Contact Us</a>
+          </li>
+          <!-- spans/links my own code -->
+          <li class="nav-item">
+            <a href="cart.html" alt="cart button" class="nav-link cart active text-warning"><i
+                class="bi bi-cart text-warning">Cart</i><span>0</span></a>
+          </li>
+          <li>
+            <a href="login.html" alt="login button" class="nav-link active text-warning"><i
+                class="bi bi-door-open">Login</i></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Body Content -->
+
+  <!-- In each div containing the class (col-md-4) the classes that give margin/padding/most of the styling
+    are adapted from https://www.bootstrapcdn.com/
+       The structure of the divs is my own work
+      -->
+  <div class="container  mt-5 mb-5 ">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images\wuTangAlbum.jpg" alt="Enter the wutang album cover" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Enter the WU-Tang</h5>
+            <p class="card-text">Artist: WuTang Clan</p>
+            <h3>£10</h3>
+            <button type="button" class="btn btn-danger add-cart">Buy</button>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images\BiggieSmalls.jpg" alt="Ready to die album cover" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Ready To Die</h5>
+            <p class="card-text">Artist: The Notorious B.I.G</p>
+            <h3>£5</h3>
+            <button type="button" alt="add to cart button" class="btn btn-danger add-cart">Buy</button>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images\Nas.jpg" alt="Illmatic album cover" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Illmatic</h5>
+            <p class="card-text">Artist: NAS</p>
+            <h3>£8</h3>
+            <button type="button" alt="add to cart button" class="btn btn-danger add-cart">Buy</button>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images\50cent.jpg" alt="get rich or die trying album cover" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Get Rich or Die Trying</h5>
+            <p class="card-text">Artist: 50Cent</p>
+            <h3>£12</h3>
+            <button type="button" alt="add to cart button" class="btn btn-danger add-cart">Buy</button>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images\snoop.jpg" alt="doggystyle album cover" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Doggystyle</h5>
+            <p class="card-text">Artist: Snoop Dogg</p>
+            <h3>£9</h3>
+            <button type="button" alt="add to cart button" class="btn btn-danger add-cart">Buy</button>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images\Tupac.jpg" alt="all eyez on me album cover" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">All Eyez on Me</h5>
+            <p class="card-text">Artist: Tupac Shakur</p>
+            <h3>£5</h3>
+            <button type="button" alt="add to cart button" class="btn btn-danger add-cart">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Product Cards -->
+
+  <!-- Body Content -->
+
+
+  <!-- Footer 
+      classes adapted from 
+    https://getbootstrap.com/docs/5.3/getting-started/introduction/-->
+  <footer class="bg-dark text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3 text-warning">
+      © 2023 Copyright: Echo Sounds
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+  <!-- link to my own javascript file -->
+  <script src="script.js"></script>
+</body>
+
+</html>
